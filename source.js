@@ -1,6 +1,6 @@
 // getElementByID
 
-let submit = document.getElementById('enter');
+let submitBtn = document.getElementById('enter');
 let input = document.getElementById('userinput');
 let ul = document.querySelector('ul');
 let list = document.querySelectorAll('.list');
@@ -8,7 +8,7 @@ let deleteBtn = document.querySelectorAll('.delete');
 
 // function decalration
 
-const query = () => {
+const refresh = () => {
 	list = document.querySelectorAll('.list');
 	deleteBtn = document.querySelectorAll('.delete');
 }
@@ -38,14 +38,14 @@ const addElementToList = () => {
 
 		ul.appendChild(li); //append : <li><span class="list">input.value</span> <button class="delete btn btn-dark">delete</button> </li> 
 		input.value = "";
-		query();
+		refresh();
 		addListenerBykey(list.length -1);
 	}
 };
 
 // Main operation
 
-submit.addEventListener("click", addElementToList);
+submitBtn.addEventListener("click", addElementToList);
 input.addEventListener("keypress", () => {
 	 event.which === 13 && addElementToList();
 });

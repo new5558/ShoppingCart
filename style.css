@@ -1,0 +1,60 @@
+body, html {
+	margin: 0;
+}
+
+.grid {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 50px auto;
+}
+
+.nav {
+	background-color: darkred;
+}
+
+.main {
+	padding: 10px;
+	justify-items: center;
+	background: #2F7336;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #AA3A38, #2F7336);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #AA3A38, #2F7336); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.form-control {
+	width: 100%;
+}
+
+li {
+	margin-top: 10px;
+	color: beige;
+}
+
+.list {
+	font-size: 1.5em; 
+}
+
+.list:hover {
+	cursor: pointer;
+}
+
+.delete {
+	position: absolute;
+	right: 50px;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.enter {
+	margin-top: 10px;
+}
+
+.nav h1 {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 20px; 
+	font-size: 1.5em;
+	color: whitesmoke;
+}
